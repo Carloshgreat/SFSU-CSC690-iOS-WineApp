@@ -43,7 +43,8 @@ class Covid19AddViewController: UIViewController {
     @IBAction func saveBtnPressed(_ sender: Any) {
         saveTask { (done) in
             if done {
-                print("We need to return now")
+                //when we need to return
+                //print("We need to return now")
                 navigationController?.popViewController(animated: true)
                 self.dismiss(animated: true, completion: nil)
             } else {
@@ -61,7 +62,9 @@ class Covid19AddViewController: UIViewController {
         
         do {
             try managedContext.save()
-            print("Data Saved")
+            
+            //testing when we save an entry/activity
+            //print("Data Saved")
             completion(true)
         } catch {
             print("Failed to save data: ", error.localizedDescription)

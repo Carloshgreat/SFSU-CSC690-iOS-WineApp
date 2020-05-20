@@ -11,6 +11,7 @@
 
 import UIKit
 import CoreData
+import SafariServices
 
 
 
@@ -21,9 +22,26 @@ let appDelegate = UIApplication.shared.delegate as? AppDelegate
 class Covid19MainViewController: UIViewController {
     
     
-    // Outlets
-        
+    //IB Outlets
     @IBOutlet weak var tv: UITableView!
+    
+    //IB Actions
+    
+    @IBAction func safariBrowsing(_ sender: Any) {
+       //Animated auto view controller
+       //https://covid19.biglocalnews.org/county-maps/index.html#/
+
+        
+        let myURL = Foundation.URL(string: "https://covid19.biglocalnews.org/county-maps/index.html#/")!
+        
+        let anAutoViewController = SFSafariViewController(url: myURL)
+        
+        present(anAutoViewController, animated: true)
+    }
+    
+    
+    
+    
     
     // Varables
     var taskArray = [Task]()
@@ -119,7 +137,9 @@ extension Covid19MainViewController {
         let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Task")
         do {
             taskArray = try  managedContext.fetch(request) as! [Task]
-            print("Data fetched, no issues")
+            
+            //to test if date is fetched or not
+            //print("Data fetched, no issues")
             completion(true)
         } catch {
             print("Unable to fetch data: ", error.localizedDescription)
@@ -133,7 +153,8 @@ extension Covid19MainViewController {
         managedContext.delete(taskArray[indexPath.row])
         do {
             try managedContext.save()
-            print("Data Deleted")
+            //to Test if deleted a table view cell/activity
+            //print("Data Deleted")
             
         } catch {
             print("Failed to delete data: ", error.localizedDescription)
@@ -151,7 +172,9 @@ extension Covid19MainViewController {
         }
         do {
             try managedContext.save()
-            print("Data updated")
+            
+            //to test if updates or not
+            //print("Data updated")
             
         } catch {
             print("Failed to update data: ", error.localizedDescription)
