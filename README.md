@@ -1,3 +1,34 @@
+# SFSU-CSC690-iOS- Covid19 Activities App
+
+
+Project changed becasue "work group" didn't work so I had to change the app (See initial milestones at the bottom of page):
+
+New iPhone App : Covid19 Activities App
+
+Main Contributor: Carlos Hernandez
+Code Reviewer: Carlos Hernandez - on second Github Account
+
+Proposal: Develop an iPhone App: Covid19 Activities App
+
+This app will:
+1) Advice users of goverment remendations for diffrent activities while at home or outsite the house
+2) Allow to user to explore Covid19 infections and deaths on a browser based on user entered data
+3) Allows the user the schedule activities in a list - CRUD Tableview
+
+
+
+
+
+
+
+
+
+
+
+=========================================================
+Initial miles Stones 1-to 3 were Abandoned:
+
+
 # SFSU-CSC690-iOS-WineApp
 iPhone App that list Wineries and Wines - In Northern CA
 
