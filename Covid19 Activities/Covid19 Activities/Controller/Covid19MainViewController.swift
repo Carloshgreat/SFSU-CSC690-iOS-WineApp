@@ -4,10 +4,28 @@
 //  COVID-19 Activities APP
 //
 //  Created by Carlos Hernandez on 5/16/20.
-//  Copyright © 2020 Carlos Hernandez. All rights reserved.
-//  with the incorporation of previous projects, online tutorials
+
+
+//  Copyright © 2020 Carlos Hernandez.
+//  All rights reserved.
+//  I used/incorporated previous projects, online tutorials
 //  and other people's code incorporated on this project.
-//
+
+
+//  List or Tutorials on video or on documents:
+//    https://www.tutorialspoint.com/how-to-make-the-corners-of-a-button-round-in-ios
+//    https://www.youtube.com/watch?v=hqWJC9v9osc
+//    https://www.youtube.com/watch?v=xpTGEoUMiOE
+//    https://www.youtube.com/watch?v=yc5KkTyDSt4
+//    https://www.raywenderlich.com/7738344-mapkit-tutorial-getting-started
+//    https://www.youtube.com/watch?v=yc5KkTyDSt4
+// and lot more that I forgot to write down
+
+
+
+
+
+
 
 import UIKit
 import CoreData
@@ -23,21 +41,23 @@ class Covid19MainViewController: UIViewController {
     
     
     //IB Outlets
-    @IBOutlet weak var tv: UITableView!
+    @IBOutlet weak var myTableView: UITableView!
     
     //IB Actions
     
     @IBAction func safariBrowsing(_ sender: Any) {
        //Animated auto view controller
        //https://covid19.biglocalnews.org/county-maps/index.html#/
+//
+//        let myURL = Foundation.URL(string: "https://covid19.biglocalnews.org/county-maps/index.html#/")!
 
-        
-        let myURL = Foundation.URL(string: "https://covid19.biglocalnews.org/county-maps/index.html#/")!
-        
-        let anAutoViewController = SFSafariViewController(url: myURL)
-        
+        let anAutoViewController = SFSafariViewController(url: URL(string: "https://covid19.biglocalnews.org/county-maps/index.html#/")!)
+
         present(anAutoViewController, animated: true)
     }
+    
+    
+    
     
     
     
@@ -59,25 +79,25 @@ class Covid19MainViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
        fetchyData()
-        tv.reloadData()
+        myTableView.reloadData()
     }
     
     func fetchyData(){
         fetchData { (done) in
             if done {
                 if taskArray.count > 0 {
-                    tv.isHidden = false
+                    myTableView.isHidden = false
                 } else {
-                    tv.isHidden = true
+                    myTableView.isHidden = true
                 }
             }
         }
     }
     
     func callDelegates(){
-        tv.delegate = self
-        tv.dataSource = self
-        tv.isHidden = true
+        myTableView.delegate = self
+        myTableView.dataSource = self
+        myTableView.isHidden = true
     }
     
     
@@ -91,7 +111,7 @@ extension Covid19MainViewController: UITableViewDataSource, UITableViewDelegate 
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: cellid, for: indexPath) as! TableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellid, for: indexPath) as! ActivitiesAndInterests
         let task = taskArray[indexPath.row]
         cell.taskLbl.text = task.taskDescription
         if task.taskStatus == true {
