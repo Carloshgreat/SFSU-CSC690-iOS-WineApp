@@ -13,8 +13,9 @@
 		9B4797F62168C9DD001C3FA8 /* Todo_Tasky.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9B4797F42168C9DD001C3FA8 /* Todo_Tasky.xcdatamodeld */; };
 		9B4797F82168C9DE001C3FA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B4797F72168C9DE001C3FA8 /* Assets.xcassets */; };
 		9B4797FB2168C9DE001C3FA8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B4797F92168C9DE001C3FA8 /* LaunchScreen.storyboard */; };
-		9B4798052168CB05001C3FA8 /* Covid19AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4798042168CB05001C3FA8 /* Covid19AddViewController.swift */; };
-		9B4798072168CB6B001C3FA8 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4798062168CB6B001C3FA8 /* TableViewCell.swift */; };
+		9B4798052168CB05001C3FA8 /* ScheduleActivitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4798042168CB05001C3FA8 /* ScheduleActivitiesViewController.swift */; };
+		9B4798072168CB6B001C3FA8 /* ActivitiesAndInterests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4798062168CB6B001C3FA8 /* ActivitiesAndInterests.swift */; };
+		AE586C802475FF18004BD5B9 /* Covid19MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE586C7F2475FF18004BD5B9 /* Covid19MapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,8 +27,9 @@
 		9B4797F72168C9DE001C3FA8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9B4797FA2168C9DE001C3FA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9B4797FC2168C9DE001C3FA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9B4798042168CB05001C3FA8 /* Covid19AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Covid19AddViewController.swift; sourceTree = "<group>"; };
-		9B4798062168CB6B001C3FA8 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		9B4798042168CB05001C3FA8 /* ScheduleActivitiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleActivitiesViewController.swift; sourceTree = "<group>"; };
+		9B4798062168CB6B001C3FA8 /* ActivitiesAndInterests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesAndInterests.swift; sourceTree = "<group>"; };
+		AE586C7F2475FF18004BD5B9 /* Covid19MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Covid19MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,7 +78,9 @@
 			isa = PBXGroup;
 			children = (
 				9B4797EF2168C9DD001C3FA8 /* Covid19MainViewController.swift */,
-				9B4798042168CB05001C3FA8 /* Covid19AddViewController.swift */,
+				AE586C7F2475FF18004BD5B9 /* Covid19MapViewController.swift */,
+				9B4798042168CB05001C3FA8 /* ScheduleActivitiesViewController.swift */,
+				9B4798062168CB6B001C3FA8 /* ActivitiesAndInterests.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -84,7 +88,6 @@
 		9B4798032168CAE1001C3FA8 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				9B4798062168CB6B001C3FA8 /* TableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -161,11 +164,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B4798072168CB6B001C3FA8 /* TableViewCell.swift in Sources */,
+				9B4798072168CB6B001C3FA8 /* ActivitiesAndInterests.swift in Sources */,
 				9B4797F02168C9DD001C3FA8 /* Covid19MainViewController.swift in Sources */,
 				9B4797EE2168C9DD001C3FA8 /* AppDelegate.swift in Sources */,
 				9B4797F62168C9DD001C3FA8 /* Todo_Tasky.xcdatamodeld in Sources */,
-				9B4798052168CB05001C3FA8 /* Covid19AddViewController.swift in Sources */,
+				9B4798052168CB05001C3FA8 /* ScheduleActivitiesViewController.swift in Sources */,
+				AE586C802475FF18004BD5B9 /* Covid19MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

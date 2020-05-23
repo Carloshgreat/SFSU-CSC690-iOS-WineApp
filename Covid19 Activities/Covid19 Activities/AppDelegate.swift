@@ -1,9 +1,6 @@
 //
-//  AppDelegate.swift
-//  Todo Tasky
-//
-//  Created by sanamsuri on 06/10/18.
-//  Copyright © 2018 sanamsuri. All rights reserved.
+//  Created by Carlos Hernandez on 5/16/20.
+
 //
 
 import UIKit

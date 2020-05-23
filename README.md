@@ -6,7 +6,7 @@ Project changed becasue "work group" didn't work so I had to change the app (See
 New iPhone App : Covid19 Activities App
 
 Main Contributor: Carlos Hernandez
-Code Reviewer: Carlos Hernandez - on second Github Account
+Code Reviewer: Carlos Hernandez 
 
 Proposal: Develop an iPhone App: Covid19 Activities App
 
@@ -14,6 +14,7 @@ This app will:
 1) Advice users of goverment remendations for diffrent activities while at home or outsite the house
 2) Allow to user to explore Covid19 infections and deaths on a browser based on user entered data
 3) Allows the user the schedule activities in a list - CRUD Tableview
+4) Allow the user to visit different websites but from animated web brosers implemented on the app
 
 
 
